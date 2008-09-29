@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="avenger-jsbsim-cnf.xml"> -->
+<PropertyList include="avenger-yasim-cnf.xml">
+
+  <sim>
+    <description>GRUMANN TBM Avenger</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
