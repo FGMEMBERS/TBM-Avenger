@@ -25,6 +25,7 @@ Some useful keys:
 =================
 
 D : Open/Close bombs bay
+e : Open/Close wings (temporary)
 
 Thanks
 ======
@@ -63,6 +64,7 @@ Quelques touches utiles :
 =========================
 
 D : Ouverture/Fermeture de la soute à bombes
+e : Pliage des ailes (temporairement)
 
 Remerciements
 =============

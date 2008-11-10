@@ -20,6 +20,15 @@
     </binding>
    </key>
 
+   <key n="101">
+    <name>e</name>
+    <desc>Wings</desc>
+    <binding>
+     <command>nasal</command>
+     <script>avenger.doorsystem.wingsexport();</script>
+    </binding>
+   </key>
+
 <!--
    <key n="101">
      <name>e</name>

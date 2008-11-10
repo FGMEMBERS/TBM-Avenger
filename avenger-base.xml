@@ -43,6 +43,10 @@
         <name>D</name>
         <desc>Open/Close bombs bay</desc>
       </key>
+      <key>
+        <name>e (temporary)</name>
+        <desc>Open/Close wings</desc>
+      </key>
     </help>
 
     <menubar include="Dialogs/avenger-menu.xml"/>
