@@ -9,7 +9,7 @@ OBJECT poly
 name "Needle1"
 data 8
 Mesh.002
-texture "early_turn_and_slip.png"
+texture "turn.png"
 texrep 1 1
 crease 61.000000
 numvert 4
@@ -30,7 +30,7 @@ OBJECT poly
 name "Needle2"
 data 8
 Mesh.003
-texture "early_turn_and_slip.png"
+texture "turn.png"
 texrep 1 1
 crease 61.000000
 numvert 4
@@ -51,7 +51,7 @@ OBJECT poly
 name "bezel"
 data 8
 Mesh.001
-texture "early_turn_and_slip.png"
+texture "turn.png"
 texrep 1 1
 crease 61.000000
 numvert 128
@@ -861,7 +861,7 @@ OBJECT poly
 name "disk"
 data 8
 Mesh.004
-texture "early_turn_and_slip.png"
+texture "turn.png"
 texrep 1 1
 crease 61.000000
 numvert 13
@@ -956,7 +956,7 @@ OBJECT poly
 name "face"
 data 4
 Mesh
-texture "early_turn_and_slip.png"
+texture "turn.png"
 texrep 1 1
 crease 61.000000
 numvert 17

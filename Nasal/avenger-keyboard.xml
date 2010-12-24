@@ -7,7 +7,7 @@
     <desc>Bomber bay</desc>
     <binding>
      <command>nasal</command>
-     <script>avenger.doorsystem.passengerexport();</script>
+     <script>doors.doorsystem.passengerexport();</script>
     </binding>
    </key>
 
@@ -16,16 +16,16 @@
     <desc>Crew door</desc>
     <binding>
      <command>nasal</command>
-     <script>avenger.doorsystem.crewexport();</script>
+     <script>doors.doorsystem.crewexport();</script>
     </binding>
    </key>
 
-   <key n="101">
-    <name>e</name>
+  <key n="69">
+    <name>E</name>
     <desc>Wings</desc>
     <binding>
      <command>nasal</command>
-     <script>avenger.doorsystem.wingsexport();</script>
+     <script>doors.doorsystem.wingsexport();</script>
     </binding>
    </key>
 

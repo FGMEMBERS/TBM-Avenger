@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -7,19 +7,57 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>interieur2</object-name>
     <object-name>soute</object-name>
     <object-name>dos</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourfer</object-name>
+    <object-name>inttoursous</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>inttourverre</object-name>
   </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>inttourverre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>inttourverre</object-name>
+  </animation>
+
+  <model>
+    <path>Aircraft/TBM-Avenger/Models/Interior/seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.300 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.410 </z-m>
+    </offsets>
+  </model>
 
   <!-- Pilote -->
   <model>
     <path>Aircraft/TBM-Avenger/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -2.489</x-m>
+      <x-m> -2.489 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.455 </z-m>
+      <z-m>  0.410 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/TBM-Avenger/Models/Pilot/radioman.xml</path>
+    <offsets>
+      <x-m> -1.500 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.410 </z-m>
     </offsets>
   </model>
 
