@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- altimeter -->
-
 <PropertyList> 
 
   <path>alt.ac</path>
 
   <animation>
     <object-name>fond</object-name>
+    <object-name>knob</object-name>
     <object-name>face</object-name>
     <object-name>alt-Needle1</object-name>
     <object-name>alt-Needle2</object-name>
@@ -94,3 +93,4 @@
   </animation>
 
 </PropertyList>
+
