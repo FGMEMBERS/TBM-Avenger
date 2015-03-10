@@ -4,8 +4,8 @@
 <sim>
     <model>
         <livery>
-            <name type="string">Default</name>
-            <texture>texture.png</texture>
+            <name type="string">US Navy, VT-2, USS Hornet</name>
+            <texture>Liveries/USNVT2.png</texture>
 
         </livery>
     </model>

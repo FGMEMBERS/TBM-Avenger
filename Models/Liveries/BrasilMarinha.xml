@@ -4,8 +4,8 @@
 <sim>
     <model>
         <livery>
-            <name type="string">Default</name>
-            <texture>texture.png</texture>
+            <name type="string">Brasilia Marinha</name>
+            <texture>Liveries/BrasilMarinha.png</texture>
 
         </livery>
     </model>

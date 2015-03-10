@@ -4,8 +4,8 @@
 
   <sim include="Nasal/views.xml">
 
-    <status>devel</status>
-    <author>BARANGER Emmanuel</author>
+    <status>devel 1.1</status>
+    <author>BARANGER Emmanuel, Stuart C</author>
 
     <fuel-fraction>1.0</fuel-fraction>
 
@@ -20,6 +20,16 @@
         <file type="string">default</file>
       </livery>
     </model>
+	
+	<systems>
+      <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+	  </electrical>
+	  <autopilot>
+        <path>Aircraft/TBM-Avenger/System/autopilot5.xml</path>
+      </autopilot>	
+	</systems>
+	
 
     <startup>
       <splash-texture>Aircraft/TBM-Avenger/avenger-splash.png</splash-texture>

@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <path>avenger.ac</path>
 
+  <sound>
+    <path>Aircraft/TBM-Avenger/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/TBM-Avenger/Models/Liveries", 10);
@@ -165,7 +169,7 @@
     </shininess>
 -->
   </animation>
-
+<!--
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
@@ -203,7 +207,7 @@
     <object-name>baieD1</object-name>
     <object-name>baieD2</object-name>
   </effect>
-
+-->
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
@@ -211,6 +215,18 @@
     <object-name>verriere</object-name>
     <object-name>tourverre</object-name>
   </animation>
+  
+   <!--  REMBRANDT support for transparent objects-->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>verriere</object-name>
+    <object-name>tourverre</object-name>
+    <object-name>propblur</object-name>
+    <object-name>propdisc</object-name>
+  </effect>
 
   <animation>
     <type>noshadow</type>
@@ -280,7 +296,7 @@
     </offsets>
   </model>
 
-  <!-- L'hélice --> 
+  <!-- helice --> 
   <animation>
     <name>HeliceComplete</name>
     <object-name>propdisc</object-name>
@@ -289,7 +305,7 @@
     <object-name>bol</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- propdisc de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdisc</object-name>
@@ -544,7 +560,7 @@
     </axis>
   </animation>
 
-  <!-- Rentré des roues -->
+  <!-- Rentr des roues -->
   <animation>
     <type>rotate</type>
     <object-name>roueG</object-name>
@@ -972,7 +988,7 @@
     </axis>
   </animation>
 
-  <!-- Soute à bombes -->
+  <!-- Soute bombes -->
   <animation>
     <name>BaieG</name>
     <object-name>baieG1</object-name>

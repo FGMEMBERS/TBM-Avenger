@@ -4,8 +4,8 @@
 <sim>
     <model>
         <livery>
-            <name type="string">Default</name>
-            <texture>texture.png</texture>
+            <name type="string">Fleet Air Arm, HMS Bulwark</name>
+            <texture>Liveries/FAABulwark.png</texture>
 
         </livery>
     </model>
