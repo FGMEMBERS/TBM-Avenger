@@ -7,7 +7,7 @@ OBJECT poly
 name "armature"
 data 8
 armature
-texture "colors.png"
+texture "seat.png"
 texrep 1 1
 crease 30.000000
 numvert 1286
@@ -9008,7 +9008,7 @@ OBJECT poly
 name "tissu"
 data 5
 tissu
-texture "colors.png"
+texture "seat.png"
 texrep 1 1
 crease 30.000000
 numvert 132

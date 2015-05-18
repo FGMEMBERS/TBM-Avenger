@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -27,20 +27,21 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/TBM-Avenger/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>com_knob</object-name>
+    <object-name>com_knob_b</object-name>
+    <object-name>nav_knob</object-name>
+    <object-name>nav_knob_b</object-name>
+    <object-name>com_vol</object-name>
+    <object-name>nav_vol</object-name>
     <object-name>com_100</object-name>
     <object-name>com_10</object-name>
     <object-name>com_1</object-name>
@@ -53,27 +54,10 @@
     <object-name>nav_01</object-name>
     <object-name>nav_001</object-name>
     <emission>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.7 </blue>
       <factor-prop>controls/electric/battery-switch</factor-prop>
-    </emission>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>fond</object-name>
-    <object-name>com_knob</object-name>
-    <object-name>com_knob_b</object-name>
-    <object-name>nav_knob</object-name>
-    <object-name>nav_knob_b</object-name>
-    <object-name>com_vol</object-name>
-    <object-name>nav_vol</object-name>
-    <emission>
-      <red>   0.03 </red>
-      <green> 0.03 </green>
-      <blue>  0.02 </blue>
-      <factor-prop>controls/electric/battery-switch</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -699,4 +683,3 @@
   </animation>
 
 </PropertyList>
-
