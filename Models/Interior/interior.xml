@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -11,28 +11,32 @@
     <object-name>soute</object-name>
     <object-name>dos</object-name>
     <object-name>inttour</object-name>
+    <object-name>inttour2</object-name>
     <object-name>inttourfer</object-name>
     <object-name>inttoursous</object-name>
-
+    <object-name>intbaieG1</object-name>
+    <object-name>intbaieG2</object-name>
+    <object-name>intbaieD1</object-name>
+    <object-name>intbaieD2</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intverriere</object-name>
     <object-name>inttourverre</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/TBM-Avenger/Models/Effects/Glass/glass</inherits-from>
     <object-name>intverriere</object-name>
     <object-name>inttourverre</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intverriere</object-name>
     <object-name>inttourverre</object-name>
-  </animation>
-
+  </effect>
+  
   <model>
     <path>Aircraft/TBM-Avenger/Models/Interior/seat/seat.xml</path>
     <offsets>
@@ -71,5 +75,100 @@
     </offsets>
   </model>
 
+  <!-- Soute à bombes -->
+  <animation>
+    <name>IntBaieG</name>
+    <object-name>intbaieG1</object-name>
+    <object-name>intbaieG2</object-name>
+  </animation>
+  
+  <animation>
+    <name>IntBaieD</name>
+    <object-name>intbaieD1</object-name>
+    <object-name>intbaieD2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntBaieG</object-name>
+    <object-name>IntBaieD</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntBaieG</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m> -1.395 </x-m>
+      <y-m> -0.605 </y-m>
+      <z-m> -0.904 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaieG2</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 85 </factor>
+    <center>
+      <x-m> -1.267 </x-m>
+      <y-m> -0.354 </y-m>
+      <z-m> -1.146 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntBaieD</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 70 </factor>
+    <center>
+      <x-m> -1.395 </x-m>
+      <y-m>  0.605 </y-m>
+      <z-m> -0.904 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaieD2</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -85 </factor>
+    <center>
+      <x-m> -1.267 </x-m>
+      <y-m>  0.354 </y-m>
+      <z-m> -1.146 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
 </PropertyList>
-

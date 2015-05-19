@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -17,18 +17,12 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/TBM-Avenger/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>AI.face</object-name>
@@ -38,10 +32,10 @@
     <object-name>AI.needle</object-name>
     <object-name>AI.aircraft</object-name>
     <emission>
+      <factor-prop>controls/electric/battery-switch</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>controls/electric/battery-switch</factor-prop>
     </emission>
   </animation>
 
@@ -94,10 +88,10 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/attitude-indicator/horizon-offset-deg</property>
-        <step>0.1</step>
-        <min>-1</min>
-        <max>1</max>
-        <wrap>0</wrap>
+        <step> 0.1 </step>
+        <min> -1 </min>
+        <max>  1 </max>
+        <wrap> 0 </wrap>
       </binding>
     </action>
   </animation>
@@ -110,10 +104,10 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/attitude-indicator/horizon-offset-deg</property>
-        <step>-0.1</step>
-        <min>-1</min>
-        <max>1</max>
-        <wrap>0</wrap>
+        <step> -0.1 </step>
+        <min> -1 </min>
+        <max>  1 </max>
+        <wrap> 0 </wrap>
       </binding>
     </action>
   </animation>
@@ -126,10 +120,10 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/attitude-indicator/horizon-offset-deg</property>
-        <step>0.1</step>
-        <min>-1</min>
-        <max>1</max>
-        <wrap>0</wrap>
+        <step> 0.1 </step>
+        <min> -1 </min>
+        <max>  1 </max>
+        <wrap> 0 </wrap>
       </binding>
     </action>
   </animation>
@@ -142,14 +136,13 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/attitude-indicator/horizon-offset-deg</property>
-        <step>-0.1</step>
-        <min>-1</min>
-        <max>1</max>
-        <wrap>0</wrap>
+        <step>-0.1 </step>
+        <min> -1 </min>
+        <max>  1 </max>
+        <wrap> 0 </wrap>
       </binding>
     </action>
   </animation>
 
 
 </PropertyList>
-

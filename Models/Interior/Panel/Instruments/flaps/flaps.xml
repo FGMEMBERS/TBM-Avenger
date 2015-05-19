@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -27,37 +27,34 @@
     <type>rotate</type>
     <property>controls/flight/flaps</property>
     <object-name>FlapSwitch</object-name>
-    <factor>10</factor>
-    <offset-deg>0</offset-deg>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> 10 </factor>
     <center>
       <x-m> -0.39 </x-m>
       <y-m>  0.00 </y-m>
       <z-m>  0.00 </z-m>
     </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>  
 
   <animation>
    <type>rotate</type>
     <property>surface-positions/flap-pos-norm</property>
     <object-name>FlapPos</object-name>
-    <factor>10</factor>
-    <offset-deg>0</offset-deg>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <factor> 10 </factor>
     <center>
       <x-m> -0.39 </x-m>
       <y-m>  0.00 </y-m>
       <z-m>  0.00 </z-m>
     </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>  
 
 </PropertyList>
-

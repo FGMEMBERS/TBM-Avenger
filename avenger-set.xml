@@ -1,11 +1,20 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="avenger-jsbsim-cnf.xml"> -->
-<PropertyList include="avenger-yasim-cnf.xml">
+<PropertyList include="avenger-base.xml">
 
   <sim>
-    <description>GRUMANN TBM Avenger</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    
+    <description>GRUMANN TBM Avenger (Yasim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>avenger-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
   </sim>
 
 </PropertyList>

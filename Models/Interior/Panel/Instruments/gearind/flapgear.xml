@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -52,10 +52,10 @@
     <object-name>mount</object-name>
     <object-name>symbols</object-name>
     <emission>
+      <factor-prop>controls/electric/battery-switch</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>controls/electric/battery-switch</factor-prop>
     </emission>
   </animation>
 
@@ -64,7 +64,7 @@
     <type>rotate</type>
     <object-name>flaps</object-name>
     <property>surface-positions/flaps-pos-norm</property>
-    <factor>90</factor>
+    <factor> 90 </factor>
     <center>
       <x-m> 0.0000 </x-m>
       <y-m> 0.0200 </y-m>
@@ -117,10 +117,9 @@
     <object-name>lw-down</object-name>
     <condition>
       <equals>
-      <property>gear/gear[0]/position-norm</property>
-      <value>1</value>
-      </equals>    <object-name>symbols</object-name>
-
+        <property>gear/gear[0]/position-norm</property>
+        <value>1</value>
+      </equals>
     </condition>
   </animation>
 
@@ -207,4 +206,3 @@
   </animation>
 
 </PropertyList>
-
